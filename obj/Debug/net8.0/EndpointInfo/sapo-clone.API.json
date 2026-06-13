@@ -1383,6 +1383,28 @@
         }
       }
     },
+    "/api/body-colors/delete-body-color": {
+      "delete": {
+        "tags": [
+          "ProductBodyColors"
+        ],
+        "parameters": [
+          {
+            "name": "bodyColorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/colors": {
       "get": {
         "tags": [
@@ -1470,6 +1492,28 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/colors/delete-color": {
+      "delete": {
+        "tags": [
+          "ProductColors"
+        ],
+        "parameters": [
+          {
+            "name": "colorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"

@@ -266,6 +266,22 @@
   },
   {
     "ContainingType": "sapo_clone.API.Controllers.ProductBodyColorsController",
+    "Method": "DeleteBodyColor",
+    "RelativePath": "api/body-colors/delete-body-color",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bodyColorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductBodyColorsController",
     "Method": "UpdateBodyColor",
     "RelativePath": "api/body-colors/update-body-color",
     "HttpMethod": "PUT",
@@ -504,6 +520,22 @@
         "Name": "dto",
         "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductColor.AddProductColorDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductColorsController",
+    "Method": "DeleteColor",
+    "RelativePath": "api/colors/delete-color",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "colorId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

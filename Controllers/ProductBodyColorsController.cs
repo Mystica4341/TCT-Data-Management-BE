@@ -52,5 +52,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productBodyColorService.UpdateBodyColor(bodyColorId, dto, cancellationToken));
             }
         }
+
+        [HttpDelete("delete-body-color")]
+        public async Task<IActionResult> DeleteBodyColor(int bodyColorId, CancellationToken cancellationToken)
+        {
+            if (bodyColorId <= 0)
+            {
+                return BadRequest("Không tìm thấy màu sắc thân gạch");
+            }
+            else
+            {
+                return Ok(await _productBodyColorService.DeleteBodyColor(bodyColorId, cancellationToken));
+            }
+        }
     }
 }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sapo-clone.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40ae9112a0b05bc2815bdd01109c7b642632f058")]
 [assembly: System.Reflection.AssemblyProductAttribute("sapo-clone.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sapo-clone.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

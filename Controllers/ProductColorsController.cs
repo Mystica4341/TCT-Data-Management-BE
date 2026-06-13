@@ -52,5 +52,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productColorService.UpdateColor(colorId, dto, cancellationToken));
             }
         }
+
+        [HttpDelete("delete-color")]
+        public async Task<IActionResult> DeleteColor(int colorId, CancellationToken cancellationToken)
+        {
+            if (colorId <= 0)
+            {
+                return BadRequest("Không tìm thấy màu sắc");
+            }
+            else
+            {
+                return Ok(await _productColorService.DeleteColor(colorId, cancellationToken));
+            }
+        }
     }
 }
