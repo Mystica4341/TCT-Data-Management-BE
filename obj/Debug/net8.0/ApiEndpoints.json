@@ -1,0 +1,2052 @@
+[
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductAntiSlipperysController",
+    "Method": "GetAllAntiSlipperys",
+    "RelativePath": "api/anti-slipperys",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductAntiSlipperysController",
+    "Method": "AddNewAntiSlippery",
+    "RelativePath": "api/anti-slipperys/add-anti-slippery",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductAntiSlippery.AddProductAntiSlipperyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductAntiSlipperysController",
+    "Method": "UpdateAntiSlippery",
+    "RelativePath": "api/anti-slipperys/update-anti-slippery",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "antiSlipperyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductAntiSlippery.UpdateProductAntiSlipperyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AreasController",
+    "Method": "GetAllAreas",
+    "RelativePath": "api/areas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AreasController",
+    "Method": "AddNewArea",
+    "RelativePath": "api/areas/add-area",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductArea.AddAreaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AreasController",
+    "Method": "DeleteArea",
+    "RelativePath": "api/areas/delete-area",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "areaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AreasController",
+    "Method": "UpdateArea",
+    "RelativePath": "api/areas/update-area",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "areaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductArea.UpdateAreaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AuthsController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AuthsController",
+    "Method": "RequestPasswordResetOtp",
+    "RelativePath": "api/auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Auth.ForgotPasswordRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AuthsController",
+    "Method": "HardResetPassword",
+    "RelativePath": "api/auth/hard-reset-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Auth.HardResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AuthsController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Auth.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AuthsController",
+    "Method": "ResendVerificationOtp",
+    "RelativePath": "api/auth/resend-verification-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Auth.ResendVerificationOtpRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AuthsController",
+    "Method": "ResetPasswordWithOtp",
+    "RelativePath": "api/auth/reset-password-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Auth.ResetPasswordWithOtpRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.AuthsController",
+    "Method": "VerifyAccountOtp",
+    "RelativePath": "api/auth/verify-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Auth.VerifyAccountOtpRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductBodyColorsController",
+    "Method": "GetAllBodyColors",
+    "RelativePath": "api/body-colors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductBodyColorsController",
+    "Method": "AddNewBodyColor",
+    "RelativePath": "api/body-colors/add-body-color",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductBodyColor.AddProductBodyColorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductBodyColorsController",
+    "Method": "UpdateBodyColor",
+    "RelativePath": "api/body-colors/update-body-color",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bodyColorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductBodyColor.UpdateProductBodyColorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CalculatedUnitsController",
+    "Method": "GetAllCalculatedUnits",
+    "RelativePath": "api/calculated-units",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CalculatedUnitsController",
+    "Method": "AddNewCalculatedUnit",
+    "RelativePath": "api/calculated-units/add-calculated-unit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.CalculatedUnit.AddCalculatedUnitDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CalculatedUnitsController",
+    "Method": "DeleteCalculatedUnit",
+    "RelativePath": "api/calculated-units/delete-calculated-unit",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "calId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CalculatedUnitsController",
+    "Method": "UpdateCalculatedUnit",
+    "RelativePath": "api/calculated-units/update-calculated-unit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "calId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.CalculatedUnit.UpdateCalculatedUnitDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CaseStudiesController",
+    "Method": "GetAll",
+    "RelativePath": "api/case-studies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "caseType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CaseStudiesController",
+    "Method": "Create",
+    "RelativePath": "api/case-studies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.CaseStudy.CreateCaseStudyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CaseStudiesController",
+    "Method": "GetById",
+    "RelativePath": "api/case-studies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CaseStudiesController",
+    "Method": "Update",
+    "RelativePath": "api/case-studies/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.CaseStudy.UpdateCaseStudyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CaseStudiesController",
+    "Method": "Delete",
+    "RelativePath": "api/case-studies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CaseStudiesController",
+    "Method": "ToggleLike",
+    "RelativePath": "api/case-studies/{id}/like",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CaseStudiesController",
+    "Method": "ToggleVerify",
+    "RelativePath": "api/case-studies/{id}/verify",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductColorsController",
+    "Method": "GetAlColors",
+    "RelativePath": "api/colors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductColorsController",
+    "Method": "AddNewColor",
+    "RelativePath": "api/colors/add-color",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductColor.AddProductColorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductColorsController",
+    "Method": "UpdateColor",
+    "RelativePath": "api/colors/update-color",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "colorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductColor.UpdateProductColorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CompanyCodesController",
+    "Method": "GetAllCompanyCodes",
+    "RelativePath": "api/company-codes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CompanyCodesController",
+    "Method": "AddNewCompanyCode",
+    "RelativePath": "api/company-codes/add-company-code",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.CompanyCode.AddCompanyCodeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CompanyCodesController",
+    "Method": "DeleteCompanyCode",
+    "RelativePath": "api/company-codes/delete-company-code",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cpnCodeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.CompanyCodesController",
+    "Method": "UpdateCompanyCode",
+    "RelativePath": "api/company-codes/update-company-code",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cpnCodeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.CompanyCode.UpdateCompanyCodeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.EmailsController",
+    "Method": "SendEmail",
+    "RelativePath": "api/emails/send-mail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Email.ForgotPasswordEmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.EmailsController",
+    "Method": "TestEmailConfiguration",
+    "RelativePath": "api/emails/test-configuration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Email.TestEmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductFactorysController",
+    "Method": "GetAllFactories",
+    "RelativePath": "api/factories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductFactorysController",
+    "Method": "AddNewFactory",
+    "RelativePath": "api/factories/add-factory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductFactory.AddProductFactoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductFactorysController",
+    "Method": "GetAllFactories",
+    "RelativePath": "api/factories/supplier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductFactorysController",
+    "Method": "UpdateFactory",
+    "RelativePath": "api/factories/update-factory",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "factoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductFactory.UpdateProductFactoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.LinksController",
+    "Method": "GetAllLinks",
+    "RelativePath": "api/links",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.LinksController",
+    "Method": "AddNewLink",
+    "RelativePath": "api/links/add-link",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Link.AddLinkDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.LinksController",
+    "Method": "DeleteLink",
+    "RelativePath": "api/links/delete-link",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "linkId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.LinksController",
+    "Method": "UpdateLink",
+    "RelativePath": "api/links/update-link",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "linkId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Link.UpdateLinkDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductMaterialsController",
+    "Method": "GetAllMaterials",
+    "RelativePath": "api/materials",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductMaterialsController",
+    "Method": "AddNewMaterial",
+    "RelativePath": "api/materials/add-material",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductMaterial.AddProductMaterialDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductMaterialsController",
+    "Method": "UpdateMaterial",
+    "RelativePath": "api/materials/update-material",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "materialId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductMaterial.UpdateProductMaterialDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductOriginsController",
+    "Method": "GetAllOrigins",
+    "RelativePath": "api/origins",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductOriginsController",
+    "Method": "AddNewOrigin",
+    "RelativePath": "api/origins/add-origin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductOrigin.AddProductOriginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductOriginsController",
+    "Method": "DeleteOrigin",
+    "RelativePath": "api/origins/delete-origin",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "originId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductOriginsController",
+    "Method": "UpdateOrigin",
+    "RelativePath": "api/origins/update-origin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "originId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductOrigin.UpdateProductOriginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductPatternsController",
+    "Method": "GetAllPatterns",
+    "RelativePath": "api/patterns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductPatternsController",
+    "Method": "AddNewPattern",
+    "RelativePath": "api/patterns/add-pattern",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductPattern.AddPatternDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductPatternsController",
+    "Method": "UpdatePattern",
+    "RelativePath": "api/patterns/update-pattern",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patternId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductPattern.UpdatePatternDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PoliciesController",
+    "Method": "GetAll",
+    "RelativePath": "api/policies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PoliciesController",
+    "Method": "Create",
+    "RelativePath": "api/policies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Policy.CreatePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PoliciesController",
+    "Method": "GetById",
+    "RelativePath": "api/policies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PoliciesController",
+    "Method": "Update",
+    "RelativePath": "api/policies/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Policy.UpdatePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PoliciesController",
+    "Method": "GetByDepartment",
+    "RelativePath": "api/policies/department/{department}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PolicyCategoriesController",
+    "Method": "GetAll",
+    "RelativePath": "api/policy-categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PolicyCategoriesController",
+    "Method": "Create",
+    "RelativePath": "api/policy-categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.PolicyCategory.CreatePolicyCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PolicyCategoriesController",
+    "Method": "GetById",
+    "RelativePath": "api/policy-categories/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PolicyCategoriesController",
+    "Method": "Update",
+    "RelativePath": "api/policy-categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.PolicyCategory.UpdatePolicyCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.PolicyCategoriesController",
+    "Method": "Delete",
+    "RelativePath": "api/policy-categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductProcessingsController",
+    "Method": "GetAllProcessings",
+    "RelativePath": "api/processings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductProcessingsController",
+    "Method": "AddNewProcessing",
+    "RelativePath": "api/processings/add-processing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductProcessing.AddProductProcessingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductProcessingsController",
+    "Method": "UpdateProcessing",
+    "RelativePath": "api/processings/update-processing",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "processingId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductProcessing.UpdateProductProcessingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "api/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupplierId",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SizeId",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UploadWebsiteStatusString",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UploadWebsiteStatus",
+        "Type": "System.Collections.Generic.List\u00601[[sapo_clone.Domain.Enum.Product.UploadWebsiteStatus, sapo-clone.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsPriced",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "AddNewProduct",
+    "RelativePath": "api/products/add-new",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Product.AddProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "BulkEditStrategyProduct",
+    "RelativePath": "api/products/bulk-strategy-edit-product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Product.Strategist.BulkStrategyProductUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "CalculateProcessingProduct",
+    "RelativePath": "api/products/calculate-processing-product",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Product.CalculateProcessingPriceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "CheckSupplierItemCode",
+    "RelativePath": "api/products/check-supplier-item-code",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierItemCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/products/delete-product",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "EditProduct",
+    "RelativePath": "api/products/edit-product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Product.EditProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetExistingSupplierSizeCombinations",
+    "RelativePath": "api/products/existing-supplier-size-combinations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GenerateReport",
+    "RelativePath": "api/products/generate-report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetStatistics",
+    "RelativePath": "api/products/get-statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "ImportExcel",
+    "RelativePath": "api/products/import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetProductDetail",
+    "RelativePath": "api/products/product-detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetProductCategoryMetadata",
+    "RelativePath": "api/products/product-metadata",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "EditStrategyProduct",
+    "RelativePath": "api/products/strategy-edit-product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Product.Strategist.EditStrategyProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetStrategyProductDetail",
+    "RelativePath": "api/products/strategy-product-detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetProductsStrategy",
+    "RelativePath": "api/products/strategy-products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupplierId",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SizeId",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UploadWebsiteStatusString",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UploadWebsiteStatus",
+        "Type": "System.Collections.Generic.List\u00601[[sapo_clone.Domain.Enum.Product.UploadWebsiteStatus, sapo-clone.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsPriced",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetOrderNumberFromSupplier",
+    "RelativePath": "api/products/suppliers-order",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetTotalPricedProductCount",
+    "RelativePath": "api/products/total-priced-products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "GetTotalProductCount",
+    "RelativePath": "api/products/total-products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "UpdateBatchProducts",
+    "RelativePath": "api/products/update-batch-product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "UpdateColor",
+    "RelativePath": "api/products/update-color",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.SettingsController",
+    "Method": "GetSetting",
+    "RelativePath": "api/settings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.SettingsController",
+    "Method": "UpdateSetting",
+    "RelativePath": "api/settings/update-setting",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "settingId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Setting.UpdateSettingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSizesController",
+    "Method": "GetAllSizes",
+    "RelativePath": "api/sizes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSizesController",
+    "Method": "AddNewSize",
+    "RelativePath": "api/sizes/add-size",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSize.AddProductSizeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSizesController",
+    "Method": "DeleteSize",
+    "RelativePath": "api/sizes/delete-size",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sizeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSizesController",
+    "Method": "UpdateSize",
+    "RelativePath": "api/sizes/update-size",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sizeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSize.UpdateProductSizeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductStoragesController",
+    "Method": "GetAllStorages",
+    "RelativePath": "api/storages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductStoragesController",
+    "Method": "AddNewStorage",
+    "RelativePath": "api/storages/add-storage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductStorage.AddProductStorageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductStoragesController",
+    "Method": "UpdateStorage",
+    "RelativePath": "api/storages/update-storage",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "storageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductStorage.UpdateProductStorageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSuppliersController",
+    "Method": "GetAllSuppliers",
+    "RelativePath": "api/suppliers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSuppliersController",
+    "Method": "AddNewSupplier",
+    "RelativePath": "api/suppliers/add-supplier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSupplier.AddProductSupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSuppliersController",
+    "Method": "GetOrderNumber",
+    "RelativePath": "api/suppliers/get-order",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSuppliersController",
+    "Method": "UpdateSupplierForStrategist",
+    "RelativePath": "api/suppliers/strategist-update-supplier",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSupplier.UpdateProductSupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSuppliersController",
+    "Method": "GetSupplierDetailForStrategist",
+    "RelativePath": "api/suppliers/supplier-detail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSuppliersController",
+    "Method": "UpdateSupplier",
+    "RelativePath": "api/suppliers/update-supplier",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSupplier.UpdateProductSupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSurfacesController",
+    "Method": "GetAllSurfaces",
+    "RelativePath": "api/surfaces",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSurfacesController",
+    "Method": "AddNewSurface",
+    "RelativePath": "api/surfaces/add-surface",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSurface.AddProductSurfaceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSurfacesController",
+    "Method": "UpdateSurface",
+    "RelativePath": "api/surfaces/update-surface",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "surfaceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSurface.UpdateProductSurfaceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.UsersController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.UsersController",
+    "Method": "AddNewUser",
+    "RelativePath": "api/users/add-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.User.AddUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.UsersController",
+    "Method": "BanUser",
+    "RelativePath": "api/users/ban-user",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.UsersController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/users/delete-user",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.UsersController",
+    "Method": "UnbanUser",
+    "RelativePath": "api/users/unban-user",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.UsersController",
+    "Method": "UpdateAvatar",
+    "RelativePath": "api/users/update-avatar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/users/update-user",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.User.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.WaterAbsorptionsController",
+    "Method": "GetAllWaterAbsorptions",
+    "RelativePath": "api/water-absorptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "term",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.WaterAbsorptionsController",
+    "Method": "AddNewWaterAbsorption",
+    "RelativePath": "api/water-absorptions/add-water-absorption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.WaterAbsorption.AddWaterAbsorptionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.WaterAbsorptionsController",
+    "Method": "UpdateWaterAbsorption",
+    "RelativePath": "api/water-absorptions/update-water-absorption",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "waterAbsorptionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.WaterAbsorption.UpdateWaterAbsorptionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

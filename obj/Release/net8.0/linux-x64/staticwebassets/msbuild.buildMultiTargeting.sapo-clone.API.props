@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\sapo-clone.API.props" />
+</Project>

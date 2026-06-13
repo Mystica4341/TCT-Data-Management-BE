@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vGTc747+i4bgPkNdh8fykjjdBWcS8gKuuu0XjLUSznk=",
+  "Source": "sapo-clone.API",
+  "BasePath": "_content/sapo-clone.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
