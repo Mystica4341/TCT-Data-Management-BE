@@ -2976,6 +2976,28 @@
         }
       }
     },
+    "/api/storages/delete-storage": {
+      "delete": {
+        "tags": [
+          "ProductStorages"
+        ],
+        "parameters": [
+          {
+            "name": "storageId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/suppliers/get-order": {
       "get": {
         "tags": [
@@ -3154,6 +3176,28 @@
         }
       }
     },
+    "/api/suppliers/delete-supplier": {
+      "delete": {
+        "tags": [
+          "ProductSuppliers"
+        ],
+        "parameters": [
+          {
+            "name": "supplierId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/surfaces": {
       "get": {
         "tags": [
@@ -3241,6 +3285,28 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/surfaces/delete-surface": {
+      "delete": {
+        "tags": [
+          "ProductSurfaces"
+        ],
+        "parameters": [
+          {
+            "name": "surfaceId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -3585,6 +3651,28 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/water-absorptions/delete-water-absorption": {
+      "delete": {
+        "tags": [
+          "WaterAbsorptions"
+        ],
+        "parameters": [
+          {
+            "name": "waterAbsorptionId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"

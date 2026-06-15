@@ -52,5 +52,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productSurfaceService.UpdateSurface(surfaceId, dto, cancellationToken));
             }
         }
+
+        [HttpDelete("delete-surface")]
+        public async Task<IActionResult> DeleteSurface(int surfaceId, CancellationToken cancellationToken)
+        {
+            if (surfaceId <= 0)
+            {
+                return BadRequest("Không tìm thấy bề mặt");
+            }
+            else
+            {
+                return Ok(await _productSurfaceService.DeleteSurface(surfaceId, cancellationToken));
+            }
+        }
     }
 }

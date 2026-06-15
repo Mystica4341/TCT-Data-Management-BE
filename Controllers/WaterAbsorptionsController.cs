@@ -52,5 +52,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _waterAbsorptionService.UpdateWaterAbsorption(waterAbsorptionId, dto, cancellationToken));
             }
         }
+
+        [HttpDelete("delete-water-absorption")]
+        public async Task<IActionResult> DeleteWaterAbsorption(int waterAbsorptionId, CancellationToken cancellationToken)
+        {
+            if (waterAbsorptionId <= 0)
+            {
+                return BadRequest("Không tìm thấy độ hút nước");
+            }
+            else
+            {
+                return Ok(await _waterAbsorptionService.DeleteWaterAbsorption(waterAbsorptionId, cancellationToken));
+            }
+        }
     }
 }

@@ -52,5 +52,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productStorageService.UpdateStorage(storageId, dto, cancellationToken));
             }
         }
-    }
+
+        [HttpDelete("delete-storage")]
+        public async Task<IActionResult> DeleteStorage(int storageId, CancellationToken cancellationToken)
+        {
+            if (storageId <= 0)
+            {
+                return BadRequest("Không tìm thấy kho");
+            }
+            else
+            {
+                return Ok(await _productStorageService.DeleteStorage(storageId, cancellationToken));
+            }
+        }
+    } 
 }

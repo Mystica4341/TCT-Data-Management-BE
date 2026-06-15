@@ -100,5 +100,17 @@ namespace sapo_clone.API.Controllers
             }
         }
 
+        [HttpDelete("delete-supplier")]
+        public async Task<IActionResult> DeleteSupplier(int supplierId, CancellationToken cancellationToken)
+        {
+            if (supplierId <= 0)
+            {
+                return BadRequest("Không tìm thấy nhà cung cấp");
+            }
+            else
+            {
+                return Ok(await _productSupplierService.DeleteSupplier(supplierId, cancellationToken));
+            }
+        }
     }
 }

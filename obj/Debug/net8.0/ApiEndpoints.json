@@ -1792,6 +1792,22 @@
   },
   {
     "ContainingType": "sapo_clone.API.Controllers.ProductStoragesController",
+    "Method": "DeleteStorage",
+    "RelativePath": "api/storages/delete-storage",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "storageId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductStoragesController",
     "Method": "UpdateStorage",
     "RelativePath": "api/storages/update-storage",
     "HttpMethod": "PUT",
@@ -1839,6 +1855,22 @@
         "Name": "dto",
         "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSupplier.AddProductSupplierDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSuppliersController",
+    "Method": "DeleteSupplier",
+    "RelativePath": "api/suppliers/delete-supplier",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -1945,6 +1977,22 @@
         "Name": "dto",
         "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductSurface.AddProductSurfaceDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductSurfacesController",
+    "Method": "DeleteSurface",
+    "RelativePath": "api/surfaces/delete-surface",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "surfaceId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -2120,6 +2168,22 @@
         "Name": "dto",
         "Type": "sapo_clone.Domain.DTOs.WebRequest.WaterAbsorption.AddWaterAbsorptionDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.WaterAbsorptionsController",
+    "Method": "DeleteWaterAbsorption",
+    "RelativePath": "api/water-absorptions/delete-water-absorption",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "waterAbsorptionId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
