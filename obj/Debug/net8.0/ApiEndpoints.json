@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "sapo_clone.API.Controllers.ProductAntiSlipperysController",
+    "Method": "DeleteAntiSlippery",
+    "RelativePath": "api/anti-slipperys/delete-anti-slippery",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "antiSlipperyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductAntiSlipperysController",
     "Method": "UpdateAntiSlippery",
     "RelativePath": "api/anti-slipperys/update-anti-slippery",
     "HttpMethod": "PUT",
@@ -690,6 +706,22 @@
         "Name": "dto",
         "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductFactory.AddProductFactoryDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductFactorysController",
+    "Method": "DeleteFactory",
+    "RelativePath": "api/factories/delete-factory",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "factoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

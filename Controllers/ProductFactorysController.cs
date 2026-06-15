@@ -58,5 +58,19 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productFactoryService.UpdateFactory(factoryId, dto, cancellationToken));
             }
         }
+
+        [HttpDelete("delete-factory")]
+        public async Task<IActionResult> DeleteFactory(int factoryId, CancellationToken cancellationToken)
+        {
+            if (factoryId <= 0)
+            {
+                return BadRequest("Không tìm thấy nhà máy");
+            }
+            else
+            {
+                return Ok(await _productFactoryService.DeleteFactory(factoryId, cancellationToken));
+            }
+        }
+
     }
 }

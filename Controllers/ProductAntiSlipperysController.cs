@@ -52,5 +52,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productAntiSlipperyService.UpdateAntiSlippery(antiSlipperyId, dto, cancellationToken));
             }
         }
-    }
+
+        [HttpDelete("delete-anti-slippery")]
+        public async Task<IActionResult> DeleteAntiSlippery(int antiSlipperyId, CancellationToken cancellationToken)
+        {
+            if (antiSlipperyId <= 0)
+            {
+                return BadRequest("Không tìm thấy độ chống trượt");
+            }
+            else
+            {
+                return Ok(await _productAntiSlipperyService.DeleteAntiSlippery(antiSlipperyId, cancellationToken));
+            }
+        }
+    } 
 }

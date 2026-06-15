@@ -1289,6 +1289,28 @@
         }
       }
     },
+    "/api/anti-slipperys/delete-anti-slippery": {
+      "delete": {
+        "tags": [
+          "ProductAntiSlipperys"
+        ],
+        "parameters": [
+          {
+            "name": "antiSlipperyId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/body-colors": {
       "get": {
         "tags": [
@@ -1630,6 +1652,28 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/factories/delete-factory": {
+      "delete": {
+        "tags": [
+          "ProductFactorys"
+        ],
+        "parameters": [
+          {
+            "name": "factoryId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
