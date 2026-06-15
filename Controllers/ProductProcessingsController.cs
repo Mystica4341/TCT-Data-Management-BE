@@ -52,5 +52,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productProcessingService.UpdateProcessing(processingId, dto, cancellationToken));
             }
         }
-    }
+
+        [HttpDelete("delete-processing")]
+        public async Task<IActionResult> DeleteProcessing(int processingId, CancellationToken cancellationToken)
+        {
+            if (processingId <= 0)
+            {
+                return BadRequest("Không tìm thấy gia công");
+            }
+            else
+            {
+                return Ok(await _productProcessingService.DeleteProcessing(processingId, cancellationToken));
+            }
+        }
+    } 
 }

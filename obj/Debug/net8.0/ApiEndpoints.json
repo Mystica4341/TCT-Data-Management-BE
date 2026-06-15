@@ -988,6 +988,22 @@
   },
   {
     "ContainingType": "sapo_clone.API.Controllers.ProductPatternsController",
+    "Method": "DeletePattern",
+    "RelativePath": "api/patterns/delete-pattern",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patternId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductPatternsController",
     "Method": "UpdatePattern",
     "RelativePath": "api/patterns/update-pattern",
     "HttpMethod": "PUT",
@@ -1205,6 +1221,22 @@
         "Name": "dto",
         "Type": "sapo_clone.Domain.DTOs.WebRequest.ProductProcessing.AddProductProcessingDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductProcessingsController",
+    "Method": "DeleteProcessing",
+    "RelativePath": "api/processings/delete-processing",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "processingId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

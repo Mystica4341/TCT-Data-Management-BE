@@ -51,5 +51,18 @@ namespace sapo_clone.API.Controllers
                 return Ok(await _productPatternService.UpdatePattern(patternId, dto, cancellationToken));
             }
         }
+
+        [HttpDelete("delete-pattern")]
+        public async Task<IActionResult> DeletePattern(int patternId, CancellationToken cancellationToken)
+        {
+            if (patternId <= 0)
+            {
+                return BadRequest("Không tìm thấy hệ vân");
+            }
+            else
+            {
+                return Ok(await _productPatternService.DeletePattern(patternId, cancellationToken));
+            }
+        }
     }
 }

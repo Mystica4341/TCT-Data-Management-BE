@@ -1985,6 +1985,28 @@
         }
       }
     },
+    "/api/patterns/delete-pattern": {
+      "delete": {
+        "tags": [
+          "ProductPatterns"
+        ],
+        "parameters": [
+          {
+            "name": "patternId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/processings": {
       "get": {
         "tags": [
@@ -2072,6 +2094,28 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/processings/delete-processing": {
+      "delete": {
+        "tags": [
+          "ProductProcessings"
+        ],
+        "parameters": [
+          {
+            "name": "processingId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
