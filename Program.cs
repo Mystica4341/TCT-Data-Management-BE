@@ -7,6 +7,17 @@ using sapo_clone.Infrastructure.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//For Development only
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAll", policy =>
+//    {
+//        policy.AllowAnyOrigin() // Hoặc điền cụ thể URL ngrok của ReactJS vào đây
+//              .AllowAnyMethod()
+//              .AllowAnyHeader();
+//    });
+//});
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -31,9 +42,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseCors("AllowReactApp");
+
+//app.UseCors("AllowAll");
 
 app.UseAuthentication();
 
