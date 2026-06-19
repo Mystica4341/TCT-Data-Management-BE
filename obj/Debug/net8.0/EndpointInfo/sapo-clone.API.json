@@ -2567,6 +2567,37 @@
         }
       }
     },
+    "/api/products/export": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdvancedSearchDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdvancedSearchDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdvancedSearchDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/products/edit-product": {
       "put": {
         "tags": [
@@ -4311,6 +4342,55 @@
         "type": "object",
         "properties": {
           "waterAbsoprtionLevel": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdvancedSearchDto": {
+        "type": "object",
+        "properties": {
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "supplierId": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "sizeId": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "uploadWebsiteStatusString": {
+            "type": "string",
+            "nullable": true
+          },
+          "uploadWebsiteStatus": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UploadWebsiteStatus"
+            },
+            "nullable": true
+          },
+          "isPriced": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "term": {
             "type": "string",
             "nullable": true
           }

@@ -1,18 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using sapo_clone.Application.IService;
-using sapo_clone.Domain.DTOs.Common.ResponseModel;
-using sapo_clone.Domain.DTOs.Common;
-using sapo_clone.Domain.DTOs.WebResponse.Product;
-using sapo_clone.Domain.DTOs.WebRequest.Product;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.EntityFrameworkCore;
-using sapo_clone.Domain.Entities;
-using System.ComponentModel;
-using sapo_clone.Domain.DTOs.WebRequest.Product.Strategist;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using sapo_clone.Application.IService;
+using sapo_clone.Domain.DTOs.Common;
+using sapo_clone.Domain.DTOs.Common.ResponseModel;
+using sapo_clone.Domain.DTOs.WebRequest.Product;
+using sapo_clone.Domain.DTOs.WebRequest.Product.Strategist;
+using sapo_clone.Domain.DTOs.WebResponse.Product;
+using sapo_clone.Domain.Entities;
 using sapo_clone.Domain.Enum.Product;
+using System.ComponentModel;
+using System.Drawing;
+using System.Security.Claims;
 
 namespace sapo_clone.API.Controllers
 {
@@ -213,6 +214,26 @@ namespace sapo_clone.API.Controllers
 
             var product = await _productService.ImportProductsFromExcelAsync(file, User.FindFirstValue(ClaimTypes.Email), cancellationToken);
             return Ok(product);
+        }
+
+        [HttpPost("export")] // Thường dùng POST nếu AdvancedSearchDto có nhiều param phức tạp
+        public async Task<IActionResult> ExportProductsToExcel([FromBody] AdvancedSearchDto filter, CancellationToken cancellationToken)
+        {
+            // Tương tự như hình của bạn, gọi thẳng Service
+            var fileBytes = await _productService.ExportProductsToExcelAsync(filter, cancellationToken);
+
+            // Nếu không có dữ liệu hoặc lỗi (tùy bạn handle logic ở Service)
+            if (fileBytes == null || fileBytes.Length == 0)
+            {
+                return BadRequest("Không thể xuất file dữ liệu.");
+            }
+
+            // Định dạng trả về file Excel
+            string contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+            string fileName = $"DanhSachSanPham_{DateTime.Now:yyyyMMdd_HHmmss}.xlsx";
+
+            // Trả về file cho Frontend tải xuống
+            return File(fileBytes, contentType, fileName);
         }
 
         [Authorize]

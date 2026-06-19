@@ -1426,6 +1426,22 @@
   },
   {
     "ContainingType": "sapo_clone.API.Controllers.ProductsController",
+    "Method": "ExportProductsToExcel",
+    "RelativePath": "api/products/export",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filter",
+        "Type": "sapo_clone.Domain.DTOs.WebRequest.Product.AdvancedSearchDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sapo_clone.API.Controllers.ProductsController",
     "Method": "GenerateReport",
     "RelativePath": "api/products/generate-report",
     "HttpMethod": "GET",

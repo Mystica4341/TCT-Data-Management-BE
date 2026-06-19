@@ -252,3 +252,12 @@ D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\tr\Microsoft
 D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\obj\Debug\net8.0\sapo-clone.API.sourcelink.json
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\ClosedXML.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\ClosedXML.Parser.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\ExcelNumberFormat.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\RBush.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\bin\Debug\net8.0\System.IO.Packaging.dll
+D:\Develop\Code\data-tcthomemart-be\sapo-clone.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
